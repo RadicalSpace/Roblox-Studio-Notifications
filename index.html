@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Studio Activity Notifications</title>
+  </head>
+  ...
+  <body>
+    <script>
+      setInterval( () => {
+        fetch('/get')
+            .then(response => response.json())
+            .then(data => {
+              if (data.hasNotification) {
+                new Notification('Someone is testing the French Resistance Game')
+              }
+            });
+      }, 
+      1000);
+    </script>
+  </body>
+</html>
