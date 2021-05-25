@@ -11,3 +11,5 @@ Instructions!
 - The contents of request.lua file go in the server script in ServerScriptService
 - Make sure the placeholder text in certain parts of the lua and HTML scripts are adjusted accordingly to what you are working on
 - Make sure the URL in the lua script ends with "/trigger" (e.g. example.com/trigger)
+
+Note: The notifications will only send if you have the HTML and Node website tab open somewhere on your browser
